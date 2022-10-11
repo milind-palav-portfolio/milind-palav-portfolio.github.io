@@ -1,0 +1,18 @@
+* {
+    font-family: Poppins, sans-serif;
+}
+
+h6 {
+    color: #6c6a6b;
+    margin-top: 7px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: unset;
+}
