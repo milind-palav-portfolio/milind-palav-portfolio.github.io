@@ -1,6 +1,6 @@
 * {
     font-family: Poppins, sans-serif;
-    color: #6c6a6b;
+    color: rgb(130, 127, 128);
 }
 
 h6 {
@@ -19,7 +19,7 @@ a:hover {
 }
 
 .work_title {
-    font-weight: 600 !important;
-    letter-spacing: 0.5px;
-    font-size: 16px;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+    font-size: 13px;
 }

@@ -1,12 +1,12 @@
-h6 {
-    font-weight: 600 !important;
+span {
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 11px;
     margin-bottom: 0px;
+    color: #434242;
 }
 
 .brand_content {
-    font-size: 14px;
+    font-size: 11px;
     letter-spacing: 2px;
     margin-bottom: 40px;
 }
