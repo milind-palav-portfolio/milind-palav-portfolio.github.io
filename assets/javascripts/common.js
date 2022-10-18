@@ -5,6 +5,7 @@ $('#fullScreenCarousel').hide();
 
 function openCarousel(id) {
     var imageNumber = id.split("_")[1];
+    $('.active').removeClass('active');
     $('#carousel_' + String(imageNumber)).addClass('active');
     $('#fullScreenCarousel').fadeIn();
 }
