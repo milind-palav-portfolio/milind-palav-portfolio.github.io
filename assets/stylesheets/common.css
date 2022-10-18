@@ -10,3 +10,7 @@ span {
     letter-spacing: 2px;
     margin-bottom: 40px;
 }
+
+.images_container img {
+    cursor: pointer;
+}
