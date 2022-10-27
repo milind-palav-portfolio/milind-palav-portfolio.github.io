@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milind Palav Portfolio</title>
 
+    <link rel="shortcut icon" href="./assets/favicon/milindpalav.jpg">
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -64,19 +66,19 @@
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_1">
                     <center>
                         <img src="./assets/campaign/terryfoxrun/Terry Fox Run1.jpg" class="d-block"
-                            style="height: 100vh; max-width: 1082px; max-height: 800px;" alt="...">
+                            style="height: 100vh; max-width: 100vw; max-height: 800px;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_2">
                     <center>
                         <img src="./assets/campaign/terryfoxrun/Terry Fox Run2.jpg" class="d-block"
-                            style="height: 100vh; max-width: 1082px; max-height: 800px;" alt="...">
+                            style="height: 100vh; max-width: 100vw; max-height: 800px;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_3">
                     <center>
                         <img src="./assets/campaign/terryfoxrun/Terry Fox Run3.jpg" class="d-block"
-                            style="height: 100vh; max-width: 1082px; max-height: 800px;" alt="...">
+                            style="height: 100vh; max-width: 100vw; max-height: 800px;" alt="...">
                     </center>
                 </div>
             </div>
@@ -152,6 +154,28 @@
     <!-- Manual JS -->
     <script src="./assets/javascripts/common.js"></script>
 
+    <script>
+        window.addEventListener('resize', function () {
+            if (window.innerWidth <= 1.35 * window.innerHeight) {
+                document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                    item.style.height = 'auto';
+                });
+            } else {
+                document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                    item.style.height = '100vh';
+                });
+            }
+        });
+        if (window.innerWidth <= 1.35 * window.innerHeight) {
+            document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                item.style.height = 'auto';
+            });
+        } else {
+            document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                item.style.height = '100vh';
+            });
+        }
+    </script>
 
 </body>
 
