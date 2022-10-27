@@ -72,13 +72,13 @@
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_2">
                     <center>
                         <img src="./assets/campaign/chainsaw/close_up_1.jpg" class="d-block"
-                            style="height: 100vh; max-width: 719px; max-height: 1000px;" alt="...">
+                            style="height: 100vh; max-width: 100vw; max-height: 1000px;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_3">
                     <center>
                         <img src="./assets/campaign/chainsaw/close_up_2.jpg" class="d-block"
-                            style="height: 100vh; max-width: 719px; max-height: 1000px;" alt="...">
+                            style="height: 100vh; max-width: 100vw; max-height: 1000px;" alt="...">
                     </center>
                 </div>
             </div>
@@ -160,21 +160,48 @@
         window.addEventListener('resize', function () {
             if (window.innerWidth <= 1.61 * window.innerHeight) {
                 document.querySelectorAll('.carousel-item img').forEach(function (item) {
-                    item.style.height = 'auto';
+                    //check parent's parent's id
+                    if (item.parentElement.parentElement.id == 'carousel_1')
+                        item.style.height = 'auto';
                 });
             } else {
                 document.querySelectorAll('.carousel-item img').forEach(function (item) {
-                    item.style.height = '100vh';
+                    if (item.parentElement.parentElement.id == 'carousel_1')
+                        item.style.height = '100vh';
+                });
+            }
+            if (window.innerWidth <= 0.72 * window.innerHeight) {
+                document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                    if (item.parentElement.parentElement.id != 'carousel_1')
+                        item.style.height = 'auto';
+                });
+            } else {
+                document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                    if (item.parentElement.parentElement.id != 'carousel_1')
+                        item.style.height = '100vh';
                 });
             }
         });
-        if (window.innerWidth <= 1.52 * window.innerHeight) {
+        if (window.innerWidth <= 1.61 * window.innerHeight) {
             document.querySelectorAll('.carousel-item img').forEach(function (item) {
-                item.style.height = 'auto';
+                if (item.parentElement.parentElement.id == 'carousel_1')
+                    item.style.height = 'auto';
             });
         } else {
             document.querySelectorAll('.carousel-item img').forEach(function (item) {
-                item.style.height = '100vh';
+                if (item.parentElement.parentElement.id == 'carousel_1')
+                    item.style.height = '100vh';
+            });
+        }
+        if (window.innerWidth <= 0.72 * window.innerHeight) {
+            document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                if (item.parentElement.parentElement.id != 'carousel_1')
+                    item.style.height = 'auto';
+            });
+        } else {
+            document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                if (item.parentElement.parentElement.id != 'carousel_1')
+                    item.style.height = '100vh';
             });
         }
     </script>
