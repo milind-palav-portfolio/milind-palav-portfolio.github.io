@@ -66,19 +66,19 @@
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_1">
                     <center>
                         <img src="./assets/campaign/m_m/m_m_c1.jpg" class="d-block"
-                            style="width: 100vw; max-width: 1423px; max-height: 506px;" alt="...">
+                            style="width: 100vw; max-width: 1423px; max-height: 100vh;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_2">
                     <center>
                         <img src="./assets/campaign/m_m/m_m_c2.jpg" class="d-block"
-                            style="width: 100vw; max-width: 1423px; max-height: 506px;" alt="...">
+                            style="width: 100vw; max-width: 1423px; max-height: 100vh;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_3">
                     <center>
                         <img src="./assets/campaign/m_m/m_m_c3.jpg" class="d-block"
-                            style="width: 100vw; max-width: 1423px; max-height: 506px;" alt="...">
+                            style="width: 100vw; max-width: 1423px; max-height: 100vh;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_4">
@@ -90,25 +90,25 @@
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_5">
                     <center>
                         <img src="./assets/campaign/m_m/m_m_g1.jpg" class="d-block"
-                            style="width: 100vw; max-width: 1423px; max-height: 506px;" alt="...">
+                            style="width: 100vw; max-width: 1423px; max-height: 100vh;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_6">
                     <center>
                         <img src="./assets/campaign/m_m/m_m_g2.jpg" class="d-block"
-                            style="width: 100vw; max-width: 1423px; max-height: 506px;" alt="...">
+                            style="width: 100vw; max-width: 1423px; max-height: 100vh;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_7">
                     <center>
                         <img src="./assets/campaign/m_m/m_m_g3.jpg" class="d-block"
-                            style="width: 100vw; max-width: 1423px; max-height: 506px;" alt="...">
+                            style="width: 100vw; max-width: 1423px; max-height: 100vh;" alt="...">
                     </center>
                 </div>
                 <div class="carousel-item" data-bs-interval="30000" id="carousel_8">
                     <center>
                         <img src="./assets/campaign/m_m/m_m_g4.jpg" class="d-block"
-                            style="width: 100vw; max-width: 1423px; max-height: 506px;" alt="...">
+                            style="width: 100vw; max-width: 1423px; max-height: 100vh;" alt="...">
                     </center>
                 </div>
             </div>
@@ -197,6 +197,28 @@
     <!-- Manual JS -->
     <script src="./assets/javascripts/common.js"></script>
 
+    <script>
+        window.addEventListener('resize', function () {
+            if (window.innerHeight <= 0.36 * window.innerWidth) {
+                document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                    item.style.width = 'auto';
+                });
+            } else {
+                document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                    item.style.width = '100vw';
+                });
+            }
+        });
+        if (window.innerHeight <= 0.36 * window.innerWidth) {
+            document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                item.style.width = 'auto';
+            });
+        } else {
+            document.querySelectorAll('.carousel-item img').forEach(function (item) {
+                item.style.width = '100vw';
+            });
+        }
+    </script>
 
 </body>
 
